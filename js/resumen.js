@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const resumenDiv = document.getElementById('resumen-pedido');
   const datosUsuario = JSON.parse(localStorage.getItem('datosUsuario'));
 
-  // Alerta de confirmación
   Swal.fire({
     icon: 'success',
     title: '¡Compra realizada con éxito!',
@@ -10,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     confirmButtonText: 'Aceptar'
   });
 
-  // Mostrar los datos si existen
   if (!datosUsuario) {
     resumenDiv.innerHTML = `
       <p>No se encontraron datos del pedido. Por favor, vuelva a completar el formulario.</p>
@@ -32,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     `;
 
-    // Eliminar los datos del localStorage después de mostrar
     localStorage.removeItem('datosUsuario');
   }
 });

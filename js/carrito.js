@@ -63,12 +63,10 @@ function finalizarPedido(index) {
   const producto = carrito[index];
   const cuotas = parseInt(document.getElementById(`cuotas-${index}`).value);
 
-  // Guardar datos para usuario.html
   sessionStorage.setItem('productoSeleccionado', JSON.stringify(producto));
   sessionStorage.setItem('cuotasSeleccionadas', cuotas);
   sessionStorage.setItem('indiceProducto', index);
 
-  // Redirigir para completar datos
   window.location.href = '/html/usuario.html';
 }
 
