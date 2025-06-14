@@ -234,6 +234,39 @@ footer {
     height: fit-content;
     background-color: #e7e7e7;
   }
+
+  .resumen-pedido {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .resumen-pedido h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+
+  .resumen-pedido p {
+    margin: 0.7rem 0;
+    font-size: 1rem;
+    color: #555;
+  }
+
+  .resumen-pedido p strong {
+    color: #000;
+  }
+
+
+
+
 }
+
 
 /*# sourceMappingURL=style.css.map */

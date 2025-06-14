@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Datos de Usuario - SE Indumentaria y Accesorios</title>
+  <link rel="stylesheet" href="../style/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <header>
+    <img class="img" src="../img/logoo.jpeg" alt="Logo" />
+    <nav>
+      <ul class="nav">
+        <li class="li"><a href="/index.html">Inicio</a></li>
+        <li class="li"><a href="/html/indumentaria.html">Indumentaria</a></li>
+        <li class="li"><a href="/html/accesorios.html">Accesorios</a></li>
+        <li class="li"><a href="/html/sucursales.html">Ubicación</a></li>
+        <li class="li"><a href="/html/contacto.html">Contacto</a></li>
+        <li class="li"><a href="/html/carrito.html">Carrito</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Completa tus datos para finalizar la compra</h1>
+
+    <form id="form-usuario">
+      <label>
+        Nombre:
+        <input type="text" name="nombre" required />
+      </label>
+
+      <label>
+        Teléfono:
+        <input type="tel" name="telefono" required />
+      </label>
+
+      <div id="campos-envio">
+        <label>
+          País:
+          <select id="pais" name="pais" required>
+            <option value="">-- Seleccione un país --</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Uruguay">Uruguay</option>
+          </select>
+        </label>
+
+        <label>
+          Provincia:
+          <select id="provincia" name="provincia" disabled required>
+            <option value="">-- Seleccione una provincia --</option>
+          </select>
+        </label>
+
+        <label>
+          Ciudad:
+          <select id="ciudad" name="ciudad" disabled required>
+            <option value="">-- Seleccione una ciudad --</option>
+          </select>
+        </label>
+
+        <label>
+          Dirección:
+          <input type="text" name="direccion" required />
+        </label>
+      </div>
+
+      <fieldset>
+        <legend>Método de entrega</legend>
+        <label>
+          <input type="radio" name="metodoEntrega" value="envio" checked />
+          Envío a domicilio
+        </label>
+        <label>
+          <input type="radio" name="metodoEntrega" value="retiro" />
+          Retirar en local
+        </label>
+      </fieldset>
+
+      <button type="submit">Confirmar pedido</button>
+    </form>
+  </main>
+
+  <footer>
+    <p class="derechos">SE Indumentaria y Accesorios - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="../js/usuario.js"></script>
+</body>
+</html>
